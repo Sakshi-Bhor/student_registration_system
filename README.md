@@ -25,10 +25,6 @@ Just open `index.html` in a browser.
 - `script.js` — CRUD + validation + localStorage + theme toggle
 - `README.md` — docs
 
-## Live Demo
-(If enabled with GitHub Pages)  
-https://<your-username>.github.io/student-registration-system
-
 ## Commit History (separate commits)
 - Add index.html
 - Add style.css
