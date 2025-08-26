@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+    <div class="header-content">
+        <div class="text">
+            <h1>📚 Student Registration System</h1>
+            <p>Register, edit, and manage student records easily.</p>
+            <button id="themeToggle">🌙 Dark Mode</button>
+        </div>
+
+        <!-- Animated Students -->
+        <div class="students">
+            <!-- Student SVG 1 -->
+            <div class="student-icon bounce">
+                🎓
+            </div>
+            <!-- Student SVG 2 -->
+            <div class="student-icon float">
+                👩‍🎓
+            </div>
+            <!-- Student SVG 3 -->
+            <div class="student-icon swing">
+                👨‍🎓
+            </div>
+        </div>
+    </div>
+</header>
+
+
+    <!-- Registration Form -->
+    <section class="form-section">
+        <h2>Register Student</h2>
+        <form id="studentForm">
+            <input type="text" id="name" placeholder="Student Name" required>
+            <input type="number" id="studentId" placeholder="Student ID" required>
+            <input type="email" id="email" placeholder="Email ID" required>
+            <input type="tel" id="contact" placeholder="Contact Number" required minlength="10" maxlength="15">
+            <button type="submit">Add Student</button>
+        </form>
+    </section>
+
+    <!-- Display Section -->
+    <section class="display-section">
+        <h2>Registered Students</h2>
+        <div class="table-container">
+            <table id="studentTable">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Student ID</th>
+                        <th>Email</th>
+                        <th>Contact</th>
+                    </tr>
+                </thead>
+                <tbody id="studentList">
+                    <!-- Records will appear here -->
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
